@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript оқу беті</title>
+    <link rel="stylesheet" href="style4.css">
+</head>
+<body>
+    <header>
+        <h1>JavaScript тілін үйрену!</h1>
+        <nav>
+            <ul>
+                <li><a href="#variables">Айнымалылар</a></li>
+                <li><a href="#functions">Функциялар</a></li>
+                <li><a href="#conditions">Шарттар</a></li>
+                <li><a href="#loops">Циклдар</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="variables">
+            <h2>Айнымалылар</h2>
+            <p>Айнымалы - деректерді сақтау үшін пайдаланылатын атау. JavaScript тілінде айнымалыны анықтау өте оңай.</p>
+
+            <h3>Мысал</h3>
+            <pre><code>
+// Айнымалыны анықтау
+var x = 5;
+var y = "Сәлем";
+document.write(x);
+document.write(y);
+            </code></pre>
+        </section>
+
+        <section id="functions">
+            <h2>Функциялар</h2>
+            <p>Функциялар - кодты қайта пайдалануға мүмкіндік беретін блоктар. JavaScript тілінде функцияларды <code>function</code> кілт сөзімен анықтайды.</p>
+
+            <h3>Мысал</h3>
+            <pre><code>
+// Функцияны анықтау
+function сәлемдесу() {
+    document.write("Сәлем, әлем!");
+}
+
+// Функцияны шақыру
+сәлемдесу();
+            </code></pre>
+        </section>
+
+        <section id="conditions">
+            <h2>Шарттар</h2>
+            <p>Шартты операторлар белгілі бір шарттың орындалуына қарай кодтың орындалуын басқарады. JavaScript тілінде шартты операторлар <code>if</code>, <code>else if</code> және <code>else</code> кілт сөздерімен анықталады.</p>
+
+            <h3>Мысал</h3>
+            <pre><code>
+// Шартты оператор
+var a = 10;
+var b = 20;
+
+if (a &lt; b) {
+    document.write("a б-дан кіші");
+} else if (a == b) {
+    document.write("a мен b тең");
+} else {
+    document.write("a б-дан үлкен");
+}
+            </code></pre>
+        </section>
+
+        <section id="loops">
+            <h2>Циклдар</h2>
+            <p>Циклдар белгілі бір шарттар орындалғанға дейін кодты қайталап орындауға мүмкіндік береді. JavaScript тілінде циклдарды <code>for</code>, <code>while</code> және <code>do-while</code> кілт сөздерімен анықтайды.</p>
+
+            <h3>Мысал</h3>
+            <pre><code>
+// for циклі
+for (var i = 0; i &lt; 5; i++) {
+    document.write(i);
+}
+
+// while циклі
+var j = 0;
+while (j &lt; 5) {
+    document.write(j);
+    j++;
+}
+            </code></pre>
+        </section>
+    </main>
+    <section id="variables">
+        <h2>Айнымалылар</h2>
+        <p>Айнымалы - деректерді сақтау үшін пайдаланылатын атау. JavaScript тілінде айнымалыны анықтау өте оңай.</p>
+    
+        <h3>Мысал</h3>
+        <pre><code>
+            // Айнымалыны анықтау
+            var x = 5;
+            var y = "Сәлем";
+            document.write(x);
+            document.write(y);
+        </code></pre>
+    
+        <!-- Вопрос теста -->
+        <p>JavaScript тілінде айнымалыны анықтау үшін қай методты пайдаланамыз?</p>
+        <!-- Варианты ответов -->
+        <input type="radio" name="variables" value="a"> var
+        <input type="radio" name="variables" value="b"> let
+        <input type="radio" name="variables" value="c"> const
+    </section>
+    <section id="variables">
+        <h2>Айнымалылар</h2>
+        <p>Айнымалы - деректерді сақтау үшін пайдаланылатын атау. JavaScript тілінде айнымалыны анықтау өте оңай.</p>
+    
+        <h3>Мысал</h3>
+        <pre><code>
+            // Айнымалыны анықтау
+            var x = 5;
+            var y = "Сәлем";
+            document.write(x);
+            document.write(y);
+        </code></pre>
+    
+        <!-- Вопросы теста -->
+        <p>JavaScript тілінде айнымалыны анықтау үшін қай методты пайдаланамыз?</p>
+        <!-- Варианты ответов -->
+        <input type="radio" name="variables" value="a"> var
+        <input type="radio" name="variables" value="b"> let
+        <input type="radio" name="variables" value="c"> const
+    
+        <p>Айнымалының түрін анықтау үшін қай операторды пайдаланамыз?</p>
+        <input type="radio" name="variables" value="d"> typeof
+        <input type="radio" name="variables" value="e"> def
+        <input type="radio" name="variables" value="f"> type
+    
+        <p>Айнымалының мәнін анықтау үшін қай операторды пайдаланамыз?</p>
+        <input type="radio" name="variables" value="g"> ==
+        <input type="radio" name="variables" value="h"> ==
+        <input type="radio" name="variables" value="i"> ===
+    </section>
+    
+    <button onclick="checkQuiz()">Тексеру</button>
+    <p id="quiz-result"></p>
+        
+ <script src="script.js"></script>
+</body>
+</html>

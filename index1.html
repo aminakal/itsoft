@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> HTML және CSS</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+    <header>
+        <h1>HTML және CSS әлеміне қош келдіңіз!</h1>
+        <nav>
+            <ul> HTML5 пішіндері кестелері CSS негіздерінің орналасуы
+                <li><a href="#html-basics">HTML негіздері</a></li>
+                <li><a href="#html5">HTML5</a></li>
+                <li><a href="#forms">HTML5 пішіндері</a></li>
+                <li><a href="#tables">Кестелер</a></li>
+                <li><a href="#css-basics">CSS негіздері</a></li>
+                <li><a href="#layout">Орналасуы</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="html-basics">
+            <h2>HTML негіздері</h2>
+            <p>HTML (HyperText Markup Language) – веб-беттердің құрылымын жасау үшін қолданылатын белгілеу тілі.</p>
+
+            <h3>Мысал</h3>
+            <pre><code>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;Үйренуге арналған бет&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt;HTML және CSS әлеміне қош келдіңіз&lt;/h1&gt;
+    &lt;p&gt;Сіздің бірінші HTML-құжатыңыз.&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+            </code></pre>
+
+            <h3>Негізгі тегтер HTML</h3>
+            <ul>
+                <li>Тақырыптар: <code>&lt;h1&gt; - &lt;h6&gt;</code></li>
+                <li>Параграф: <code>&lt;p&gt;</code></li>
+                <li>Сілтеме: <code>&lt;a href="https://example.com"&gt;Текст ссылки&lt;/a&gt;</code></li>
+                <li>Сурет: <code>&lt;img src="image.jpg" alt="Описание изображения"&gt;</code></li>
+                <li>Тізімдер: реттелген <code>&lt;ol&gt;</code>, реттелмеген <code>&lt;ul&gt;</code>, элементы списка <code>&lt;li&gt;</code></li>
+            </ul>
+        </section>
+
+        <section id="html5">
+            <h2>Семантикалық тегтер HTML5</h2>
+            <p>HTML5 веб-беттердің құрылымы мен қолжетімділігін жақсарту үшін жаңа семантикалық тегтерді енгізді.</p>
+            <ul>
+                <li><code>&lt;header&gt;</code> — бет немесе бөлім тақырыбы.</li>
+                <li><code>&lt;nav&gt;</code> — сайтты шарлау.</li>
+                <li><code>&lt;main&gt;</code> — құжаттың негізгі мазмұны.</li>
+                <li><code>&lt;article&gt;</code> — тәуелсіз мазмұн бөлігі.</li>
+                <li><code>&lt;section&gt;</code> — құжаттың бөлімі.</li>
+                <li><code>&lt;aside&gt;</code> — бүйірлік тақта немесе қолдаушы мазмұн.</li>
+                <li><code>&lt;footer&gt;</code> — Беттің немесе бөлімнің төменгі деректемесі.</li>
+            </ul>
+        </section>
+
+        <section id="forms">
+            <h2>Форма</h2>
+            <p>Фомалар пайдаланушылардан деректерді жинау үшін пайдаланылады.</p>
+            <form>
+                <label for="name">Есім:</label>
+                <input type="text" id="name" name="name"><br>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email"><br>
+
+                <label for="message">Хат:</label><br>
+                <textarea id="message" name="message"></textarea><br>
+
+                <input type="submit" value="Жіберу">
+            </form>
+        </section>
+
+        <section id="tables">
+            <h2>Кестелер</h2>
+            <p>Кестелер мәліметтерді кесте түрінде көрсету үшін қолданылады.</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Есім</th>
+                        <th>Жас</th>
+                        <th>Қала</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Амина</td>
+                        <td>28</td>
+                        <td>Москва</td>
+                    </tr>
+                    <tr>
+                        <td>Иван</td>
+                        <td>34</td>
+                        <td>Санкт-Петербург</td>
+                    </tr>
+                    <tr>
+                        <td>Мария</td>
+                        <td>22</td>
+                        <td>Новосибирск</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="css-basics">
+            <h2>CSS негіздері</h2>
+            <p>CSS (Cascading Style Sheets) иHTML-элементтерді әрлеу үшін қолданылады.</p>
+
+            <h3> CSS пен HTML-ді қосу</h3>
+            <ul>
+                <li>Ішкі файл (внутри тега <code>&lt;style&gt;</code> в разделе <code>&lt;head&gt;</code>).</li>
+                <li>Сыртқы файл (через тег <code>&lt;link&gt;</code> в разделе <code>&lt;head&gt;</code>).</li>
+                <li>Кіріітірілген стиль (через атрибут <code>style</code> в HTML-элементе).</li>
+            </ul>
+
+            <h3>Пример CSS-кода</h3>
+            <pre><code>
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+main {
+    padding: 1rem 2rem;
+}
+            </code></pre>
+        </section>
+
+        <section id="layout">
+            <h2> Flexbox және Grid</h2>
+            <div class="flex-container">
+                <div class="flex-item">Flex Item 1</div>
+                <div class="flex-item">Flex Item 2</div>
+                <div class="flex-item">Flex Item 3</div>
+            </div>
+
+            <div class="grid-container">
+                <div class="grid-item">Grid Item 1</div>
+                <div class="grid-item">Grid Item 2</div>
+                <div class="grid-item">Grid Item 3</div>
+                <div class="grid-item">Grid Item 4</div>
+            </div>
+        </section>
+    </main>
+    <main>
+        <!-- Остальные секции остаются такими же -->
+
+        <section id="quiz">
+            <h2>Тест</h2>
+            <form id="quiz-form">
+                <div class="quiz-question">
+                    <p>1. HTML дегеніміз не?</p>
+                    <div class="quiz-options">
+                        <label><input type="radio" name="q1" value="a"> Гипертексттік белгілеу тілі</label>
+                        <label><input type="radio" name="q1" value="b"> Каскадты стильдер кестесі</label>
+                        <label><input type="radio" name="q1" value="c"> Программалау тілі</label>
+                    </div>
+                </div>
+
+                <div class="quiz-question">
+                    <p>2. CSS дегеніміз не?</p>
+                    <div class="quiz-options">
+                        <label><input type="radio" name="q2" value="a"> Программалау тілі</label>
+                        <label><input type="radio" name="q2" value="b"> Гипертексттік белгілеу тілі</label>
+                        <label><input type="radio" name="q2" value="c"> Каскадты стильдер кестесі</label>
+                    </div>
+                </div>
+
+                <div class="quiz-question">
+                    <p>3. HTML5-тің қандай семантикалық тегі құжаттың негізгі мазмұнын білдіреді?</p>
+                    <div class="quiz-options">
+                        <label><input type="radio" name="q3" value="a"> &lt;main&gt;</label>
+                        <label><input type="radio" name="q3" value="b"> &lt;header&gt;</label>
+                        <label><input type="radio" name="q3" value="c"> &lt;footer&gt;</label>
+                    </div>
+                </div>
+
+                <div class="quiz-question">
+                    <p>4. HTML құжатта тақырыпты қалай белгілеуге болады?</p>
+                    <div class="quiz-options">
+                        <label><input type="radio" name="q4" value="a"> &lt;title&gt;</label>
+                        <label><input type="radio" name="q4" value="b"> &lt;head&gt;</label>
+                        <label><input type="radio" name="q4" value="c"> &lt;h1&gt; - &lt;h6&gt;</label>
+                    </div>
+                </div>
+
+                <div class="quiz-question">
+                    <p>5. CSS-де элементтің түсін қалай өзгертуге болады?</p>
+                    <div class="quiz-options">
+                        <label><input type="radio" name="q5" value="a"> color</label>
+                        <label><input type="radio" name="q5" value="b"> background-color</label>
+                        <label><input type="radio" name="q5" value="c"> text-color</label>
+                    </div>
+                </div>
+
+                <input type="button" value="Тексеру" onclick="checkQuiz()">
+            </form>
+            <div id="quiz-result"></div>
+        </section>
+    </main>
+
+
+    <script src="script.js"></script>
+
+    
+</body>
+</html>

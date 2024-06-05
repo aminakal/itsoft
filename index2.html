@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python оқыту беті</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+    <header>
+        <h1>Python тілін үйрену!</h1>
+        <nav>
+            <ul>
+                <li><a href="#variables">Айнымалылар</a></li>
+                <li><a href="#functions">Функциялар</a></li>
+                <li><a href="#conditions">Шарттар</a></li>
+                <li><a href="#loops">Циклдар</a></li>
+                <li><a href="#libraries">Кітапханалар</a></li>
+                <li><a href="#oop">Нысантылық бағдарламалау</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="variables">
+            <h2>Айнымалылар</h2>
+            <p>Айнымалы - деректерді сақтау үшін пайдаланылатын атау. Python тілінде айнымалыны анықтау өте оңай.</p>
+
+            <h3>Мысал</h3>
+            <pre><code>
+# Айнымалыны анықтау
+x = 5
+y = "Сәлем"
+print(x)
+print(y)
+            </code></pre>
+        </section>
+
+        <section id="functions">
+            <h2>Функциялар</h2>
+            <p>Функциялар - кодты қайта пайдалануға мүмкіндік беретін блоктар. Python тілінде функцияларды <code>def</code> кілт сөзімен анықтайды.</p>
+
+            <h3>Мысал</h3>
+            <pre><code>
+# Функцияны анықтау
+def сәлемдесу():
+    print("Сәлем, әлем!")
+
+# Функцияны шақыру
+сәлемдесу()
+            </code></pre>
+        </section>
+
+        <section id="conditions">
+            <h2>Шарттар</h2>
+            <p>Шартты операторлар белгілі бір шарттың орындалуына қарай кодтың орындалуын басқарады. Python тілінде шартты операторлар <code>if</code>, <code>elif</code> және <code>else</code> кілт сөздерімен анықталады.</p>
+
+            <h3>Мысал</h3>
+            <pre><code>
+# Шартты оператор
+a = 10
+b = 20
+
+if a < b:
+    print("a b-дан кіші")
+elif a == b:
+    print("a мен b тең")
+else:
+    print("a b-дан үлкен")
+            </code></pre>
+        </section>
+
+        <section id="loops">
+            <h2>Циклдар</h2>
+            <p>Циклдар белгілі бір шарттар орындалғанға дейін кодты қайталап орындауға мүмкіндік береді. Python тілінде циклдарды <code>for</code> және <code>while</code> кілт сөздерімен анықтайды.</p>
+
+            <h3>Мысал</h3>
+            <pre><code>
+# for циклі
+fruits = ["алма", "банан", "шабдалы"]
+for fruit in fruits:
+    print(fruit)
+
+# while циклі
+i = 1
+while i < 6:
+    print(i)
+    i += 1
+            </code></pre>
+        </section>
+
+        <section id="libraries">
+            <h2>Кітапханалар</h2>
+            <p>Python-да көптеген кітапханалар жасалған, оларды қолдану арқылы функцияларға, деректердің өңделуіне және басқа мүмкіндіктерге ие болуға болады.</p>
+            <p>Алдыңғыда осы жағдайларды қолдану үшін сіз алдыңғыларды орнату қажет.</p>
+            <p>Кітапханаларды орнату үшін төмендегі командаларды пайдаланыңыз:</p>
+            <ul>
+                <li><code>pip install library_name</code></li>
+            </ul>
+        </section>
+
+        <section id="oop">
+            <h2>Нысанталық бағдарламалау (ООП)</h2>
+            <p>Python объектілік программаға түрлендірген тілді, сондай-а ол аса түсінікті, өзін-өзі қайта пайдалануға нысандыларды қолданады.</p
+                <section id="oop">
+                    <h2>Нысанталық бағдарламалау (ООП)</h2>
+                    <p>Python объектілік программаға түрлендірген тілді, сондай-а ол аса түсінікті, өзін-өзі қайта пайдалануға нысандыларды қолданады.</p>
+                
+                    <h3>Мысал</h3>
+                    <pre><code>
+                # Классты анықтау
+                class Әдемі:
+                    def __init__(self, аты, жасы):
+                        self.аты = аты
+                        self.жасы = жасы
+                
+                    def табу(self):
+                        print("Сәлем менің атым", self.аты)
+                
+                # Нысанды анықтау
+                әдем = Әдемі("Адам", 25)
+                
+                # Методты шақыру
+                әдем.табу()
+                    </code></pre>
+                </section>
+                <section id="books">
+                    <h2>Кітаптар</h2>
+                   
+                </section>
+        </section>
+        <label><input type="radio" name="q1" value="c"> <code>string x = "Hello";</code></label>
+    </div>
+</div>
+<div class="quiz-question">
+    <p>2. Функцияны қалай анықтауға болады?</p>
+    <div class="quiz-options">
+        <label><input type="radio" name="q2" value="a"> <code>define myFunction():</code></label>
+        <label><input type="radio" name="q2" value="b"> <code>def myFunction():</code></label>
+        <label><input type="radio" name="q2" value="c"> <code>function myFunction():</code></label>
+    </div>
+</div>
+<div class="quiz-question">
+    <p>3. Шартты операторлардың саны:</p>
+    <div class="quiz-options">
+        <label><input type="radio" name="q3" value="a"> 1</label>
+        <label><input type="radio" name="q3" value="b"> 3</label>
+        <label><input type="radio" name="q3" value="c"> 2</label>
+    </div>
+</div>
+<div class="quiz-question">
+    <p>4. Python-да for циклінің қолданылуы:</p>
+    <div class="quiz-options">
+        <label><input type="radio" name="q4" value="a"> Тек қайтарады</label>
+        <label><input type="radio" name="q4" value="b"> Санамағыңыз бойынша айтылады</label>
+        <label><input type="radio" name="q4" value="c"> Жоқ, қолданылмайды</label>
+    </div>
+</div>
+<div class="quiz-question">
+    <p>5. Python-да деректер өңделуіне мүмкіндік беретін не?</p>
+    <div class="quiz-options">
+        <label><input type="radio" name="q5" value="a"> Modules</label>
+        <label><input type="radio" name="q5" value="b"> Libraries</label>
+        <label><input type="radio" name="q5" value="c"> Functions</label>
+    </div>
+</div>
+<button type="button" onclick="checkQuiz()">Тексеру</button>
+</form>
+<div id="quiz-result"></div>
+</section>
+</main>
+
+
+
+<script src="script.js"></script>
+        <html
+                                

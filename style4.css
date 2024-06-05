@@ -1,0 +1,127 @@
+/* Общие стили для HTML-страницы */
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background: #e05a00;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+main {
+    padding: 1rem 2rem;
+}
+
+h1, h2, h3 {
+    color: #333;
+}
+
+pre {
+    background: #eee;
+    padding: 1rem;
+    overflow: auto;
+}
+
+code {
+    background: #f9f9f9;
+    padding: 0.2rem 0.4rem;
+    border-radius: 4px;
+}
+
+ul {
+    list-style-type: disc;
+    margin: 1rem 0;
+    padding: 0 1.5rem;
+}
+
+footer {
+    background: #d34c17;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+/* Стили для разделов страницы */
+
+loops {
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 2rem;
+}
+
+#variables h2, #functions h2, #conditions h2, #loops h2 {
+    margin-bottom: 1rem;
+}
+
+#variables pre, #functions pre, #conditions pre, #loops pre {
+    background: #f0f0f0;
+    margin-top: 1rem;
+    padding: 1rem;
+    border-radius: 4px;
+}
+
+#variables pre code, #functions pre code, #conditions pre code, #loops pre code {
+    color: #333;
+}
+
+#variables p, #functions p, #conditions p, #loops p {
+    margin-top: 0.5rem;
+}
+
+#variables, #functions, #conditions, #loops {
+    margin-top: 2rem;
+}
+/* Стили для вопросов и вариантов ответов */
+.questions {
+    margin-top: 2rem;
+}
+
+.questions p {
+    font-weight: bold;
+}
+
+.questions input[type="radio"] {
+    margin-right: 1rem;
+}
+
+/* Стили для кнопки "Проверить ответы" */
+#check-button {
+    display: block;
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#check-button:hover {
+    background-color: #0056b3;
+}
+
+

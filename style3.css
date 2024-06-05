@@ -1,0 +1,146 @@
+/* Общие стили для HTML-страницы */
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background: #043b83;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+/* Стили для разделов страницы */
+
+main {
+    padding: 1rem 2rem;
+}
+
+h1, h2, h3 {
+    color: #333;
+}
+
+pre {
+    background: #eee;
+    padding: 1rem;
+    overflow: auto;
+}
+
+code {
+    background: #f9f9f9;
+    padding: 0.2rem 0.4rem;
+    border-radius: 4px;
+}
+
+ul {
+    list-style-type: disc;
+    margin: 1rem 0;
+    padding: 0 1.5rem;
+}
+
+footer {
+    background: #1708a3;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+/* Стили для дополнительных разделов */
+
+#methods, #conditions, #loops {
+    margin-top: 2rem;
+}
+
+#methods h3, #conditions h3, #loops h3 {
+    margin-top: 1.5rem;
+}
+
+#methods pre, #conditions pre, #loops pre {
+    background: #f0f0f0;
+    margin-top: 1rem;
+}
+
+#methods pre code, #conditions pre code, #loops pre code {
+    color: #333;
+}
+
+#methods p, #conditions p, #loops p {
+    margin-top: 0.5rem;
+}
+
+#variables, #methods, #conditions, #loops {
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 2rem;
+}
+
+/* Дополнительные стили */
+
+blockquote {
+    margin: 0;
+    padding: 1rem;
+    background: #f9f9f9;
+    border-left: 5px solid #333;
+}
+
+blockquote p {
+    margin: 0;
+}
+
+.quiz-question {
+    margin-bottom: 1.5rem;
+}
+
+.quiz-options {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.quiz-options label {
+    background: #fff;
+    padding: 0.5rem;
+    border: 2px solid #1c028b;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.quiz-options label:hover {
+    background: #1c028b;
+    color: #fff;
+}
+
+.quiz-options input[type="radio"] {
+    margin-right: 0.5rem;
+}
+
+input[type="button"] {
+    background: #1c028b;
+    color: #fff;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+input[type="button"]:hover {
+    background: #333;
+}
+
+#quiz-result {
+    margin-top: 1.5rem;
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: #1c028b;
+}
+
+

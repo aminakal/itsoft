@@ -1,0 +1,393 @@
+* {  
+  box-sizing: border-box;  
+  padding: 0;  
+  margin: 0;  
+}  
+  
+body {  
+  font-family: "Signika Negative", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal; 
+}  
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px 30px; /* Adjust as needed */
+  background-color: white; /* Example background color */
+}
+
+.icon1 {
+  margin-right: 20px; /* Adjust as needed */
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  color: #041075;
+}
+
+.ul-nav {
+  list-style: none;
+  display: flex;
+  gap: 20px; /* Equal spacing between menu items */
+  margin: 0;
+  padding: 0;
+}
+
+.ul-nav li {
+  position: relative;
+}
+
+.ul-nav a {
+  text-decoration: none;
+  padding: 10px 15px; /* Adjust as needed */
+  color:#041075; /* Example text color */
+}
+
+.ul-nav ul {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #fff;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.ul-nav li:hover ul {
+  display: block;
+}
+
+.ul-nav ul li {
+  width: 200px; /* Adjust as needed */
+}
+
+.search-box {
+  display: flex;
+  align-items: center;
+  margin-left: 10px; /* Adjust as needed */
+}
+
+.search-input {
+  width: 500px; /* Increased width */
+  height: 30px;
+  padding: 5px 10px;
+  border: 2px solid #041075;
+  border-radius: 5px;
+  background-color:  #f5f5f5;
+}
+
+.search-btn {
+  padding: 5px;
+  border: none;
+  background-color: #fdfdfd; /* Example button background color */
+  color: #fff; /* Example button text color */
+  border-radius: 0 3px 3px 0;
+}
+
+.search-btn img {
+  width: 25px; /* Adjust as needed */
+  height: 20px; /* Adjust as needed */
+}
+
+.button-nav {
+  margin-left: 20px; /* Adjust as needed */
+}
+
+.buttonnav3 {
+  padding: 10px 15px; /* Adjust as needed */
+  background-color: #ff6d0cd3; /* Example button background color */
+  color: #fff; /* Example button text color */
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  width: 100px;
+}
+
+.login-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+
+  
+.icon1 {  
+  display: flex;  
+  align-items: center;  
+  width: 90px; 
+  height: 50px; 
+} 
+.icon { 
+  width: 130px; 
+  height: 70px; 
+}  
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  width: 80%;
+  max-width: 1800px;
+  margin: auto;
+}
+.background-block {
+  position: relative;
+  width: 100%;
+  height: 50vh; /* Set to 50% of the viewport height, adjust as needed */
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.background-video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -1;
+  transform: translate(-50%, -50%);
+  background: no-repeat;
+  background-size: cover;
+}
+
+.overlay-text {
+  position: relative;
+    color: white; /* Base color for the text */
+    font-size: 2em; /* Adjust as needed */
+    padding: 20px;
+   
+    border-radius: 5px; /* Optional: to round the corners */
+    z-index: 1;
+    opacity: 0.7; /* Adjust opacity value to make text transparent */
+}
+.divblock {
+  width: 100%;
+  height: 80px;
+  padding: 20px;
+  text-align: center;
+  background-color: #ff661f;
+  color: white;
+}
+.pustoi {
+  width: 100%;
+  height:80px ;
+}
+.grid-item {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  text-align: center;
+  padding: 5px;
+  height: 700px; /* Increased height */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: #041075;
+  transition: transform 0.3s ease; /* Добавляем эффект перехода */
+}
+.grid-item:hover {
+  transform: translateY(-10px); /* Поднимаем контейнер при наведении на 10px */
+} 
+
+.grid-item img {
+  width: 100%;
+  height: auto ;
+  border-bottom: 1px solid #ddd;
+}
+
+.grid-item h3 {
+  margin: 5px 0 5px;
+  font-size: 1.5em;
+}
+
+.grid-item h3 a {
+  text-decoration: none;
+  color:#ff661f; 
+}
+
+.grid-item h3 a:hover {
+  text-decoration: underline;
+}
+.grid-item h4 {
+  color: #040f75a1;
+}
+
+.rating {
+  color: #ff661f; /* Gold color for stars */
+  font-size: 1.2em;
+}
+.pustoi2{
+  height: 50px;
+}
+.grid-container2 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.grid-item2 {
+  background-color: #041075;
+  padding: 20px;
+  position: relative;
+  color: white;
+  transition: transform 0.3s ease;
+}
+.grid-item2:hover {
+  transform: translateY(-10px); /* Поднимаем контейнер при наведении на 10px */
+}
+
+.grid-item2 h2 {
+  padding: 5px;
+}
+.grid-item2 p {
+  padding: 5px;
+}
+
+.link2 {
+  display: block;
+  margin-top: 10px;
+}
+
+.icon2 {
+  position: absolute;
+  bottom: 30px;
+  left: 80%;
+  transform: translateX(-50%);
+}
+
+.icon2 img {
+  width: 50px;
+  height: auto;
+}
+.pustoi3 {
+  height: 30px;
+}
+.footer {
+  background-color: #ff661f;
+  color: #fff;
+  padding: 50px 0;
+}
+
+.container4 {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-column {
+  flex: 1;
+  margin-right: 30px;
+}
+
+.footer-column:last-child {
+  margin-right: 0;
+}
+
+.footer-column h4 {
+  margin-bottom: 15px;
+}
+
+.social-links {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.social-links li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.social-links img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+/*адаптивка*/
+@media (max-width: 1200px) {
+  .container {
+      grid-template-columns: 1fr;
+  }
+
+  .grid-container2 {
+      grid-template-columns: repeat(2, 1fr);
+  }
+
+  .search-input {
+      width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .nav {
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 20px;
+  }
+
+  .ul-nav {
+      flex-direction: column;
+      gap: 10px;
+  }
+
+  .container {
+      width: 100%;
+      padding: 0 20px;
+  }
+
+  .grid-container2 {
+      grid-template-columns: 1fr;
+  }
+
+  .footer-content {
+      flex-direction: column;
+      align-items: flex-start;
+  }
+
+  .footer-column {
+      margin-right: 0;
+      margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .nav {
+      padding: 10px;
+  }
+
+  .buttonnav3 {
+      width: auto;
+  }
+
+  .search-input {
+      width: 100%;
+      margin-right: 10px;
+  }
+
+  .grid-item {
+      height: auto;
+  }
+}
+/*html/css*/
+
+
+
+
+  
+ 
+  
+ 
+
+  

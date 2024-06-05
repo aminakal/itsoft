@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C# оқу беті</title>
+    <link rel="stylesheet" href="style3.css">
+</head>
+<body>
+    <header>
+        <h1>C# тілін үйрену!</h1>
+        <nav>
+            <ul>
+                <li><a href="#variables">Айнымалылар</a></li>
+                <li><a href="#methods">Методтар</a></li>
+                <li><a href="#conditions">Шарттар</a></li>
+                <li><a href="#loops">Циклдар</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="variables">
+            <h2>Айнымалылар</h2>
+            <p>Айнымалы - деректерді сақтау үшін пайдаланылатын атау. C# тілінде айнымалыны анықтау өте оңай.</p>
+
+            <h3>Мысал</h3>
+            <pre><code>
+// Айнымалыны анықтау
+int x = 5;
+string y = "Сәлем";
+Console.WriteLine(x);
+Console.WriteLine(y);
+            </code></pre>
+        </section>
+
+        <section id="methods">
+            <h2>Методтар</h2>
+            <p>Методтар - функциялардың C# тіліндең айнымалысы. Олар кодты бөліп жатқан блоктарды қайта пайдалануға мүмкіндік береді.</p>
+
+            <h3>Мысал</h3>
+            <pre><code>
+// Методты анықтау
+void Сәлемдесу()
+{
+    Console.WriteLine("Сәлем, әлем!");
+}
+
+// Методты шақыру
+Сәлемдесу();
+            </code></pre>
+        </section>
+
+        <section id="conditions">
+            <h2>Шарттар</h2>
+            <p>Шартты операторлар белгілі бір шарттың орындалуына қарай кодтың орындалуын басқарады. C# тілінде шартты операторлар <code>if</code>, <code>else if</code> және <code>else</code> кілт сөздерімен анықталады.</p>
+
+            <h3>Мысал</h3>
+            <pre><code>
+// Шартты оператор
+int a = 10;
+int b = 20;
+
+if (a &lt; b)
+{
+    Console.WriteLine("a b-дан кіші");
+}
+else if (a == b)
+{
+    Console.WriteLine("a мен b тең");
+}
+else
+{
+    Console.WriteLine("a b-дан үлкен");
+}
+            </code></pre>
+        </section>
+
+        <section id="loops">
+            <h2>Циклдар</h2>
+            <p>Циклдар белгілі бір шарттар орындалғанға дейін кодты қайталап орындауға мүмкіндік береді. C# тілінде циклдарды <code>for</code>, <code>while</code> және <code>do-while</code> кілт сөздерімен анықтайды.</p>
+
+            <h3>Мысал</h3>
+            <pre><code>
+// for циклі
+for (int i = 0; i &lt; 5; i++)
+{
+    Console.WriteLine(i);
+}
+
+// while циклі
+int j = 0;
+while (j &lt; 5)
+{
+    Console.WriteLine(j);
+    j++;
+}
+            </code></pre>
+        </section>
+    </main>
+
+   
+html
+Копировать код
+<section id="quiz">
+    <h2>Тест</h2>
+    <form id="quiz-form">
+        <div class="quiz-question">
+            <p>1. Айнымалыны қалай анықтауға болады?</p>
+            <div class="quiz-options">
+                <label><input type="radio" name="q1" value="a"> <code>int x = 5;</code></label>
+                <label><input type="radio" name="q1" value="b"> <code>string x = "Hello";</code></label>
+            </div>
+        </div>
+        <div class="quiz-question">
+            <p>2. Методты қалай анықтауға болады?</p>
+            <div class="quiz-options">
+                <label><input type="radio" name="q2" value="a"> <code>define myMethod():</code></label>
+                <label><input type="radio" name="q2" value="b"> <code>void myMethod():</code></label>
+            </div>
+        </div>
+        <div class="quiz-question">
+            <p>3. Шартты операторлардың саны:</p>
+            <div class="quiz-options">
+                <label><input type="radio" name="q3" value="a"> 1</label>
+                <label><input type="radio" name="q3" value="b"> 3</label>
+            </div>
+        </div>
+        <div class="quiz-question">
+            <p>4. C#-да for циклінің қолданылуы:</p>
+            <div class="quiz-options">
+                <label><input type="radio" name="q4" value="a"> Тек қайтарады</label>
+                <label><input type="radio" name="q4" value="b"> Санамағыңыз бойынша айтылады</label>
+                <label><input type="radio" name="q4" value="c"> Жоқ, қолданылмайды</label>
+            </div>
+        </div>
+        <button type="button" onclick="checkQuiz()">Тексеру</button>
+    </form>
+    <div id="quiz-result"></div>
+</section>
+<script src="script.js"></script>
+</body>
+</html>
